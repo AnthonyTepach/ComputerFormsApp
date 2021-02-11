@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_login_app_cf"
+
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textView_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="377dp"
+        android:layout_marginEnd="237dp"
+        android:layout_marginRight="237dp"
+        android:layout_marginBottom="473dp"
+        android:text="Correo electronico:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="467dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginRight="280dp"
+        android:layout_marginBottom="383dp"
+        android:text="Contraseña:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_pass"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="486dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="335dp"
+        android:drawableLeft="@drawable/ic_key"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/azul_cf"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_usuario"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="425dp"
+        android:drawableLeft="@drawable/ic_at"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/azul_cf"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_iniciar"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="555dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="246dp"
+        android:background="@drawable/btn_entrar"
+        android:onClick="login"
+        android:text="Entrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.41" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.515"
+        app:srcCompat="@drawable/spin_cf_blanco" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="703dp"
+        android:layout_marginBottom="147dp"
+        android:text="Síguenos en nuestras redes sociales "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="741dp"
+        android:layout_marginBottom="83dp"
+        app:chipSpacingHorizontal="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:singleLine="true"
+        app:singleSelection="true">
+
+        <ImageButton
+            android:id="@+id/btn_facebook"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goToFacebook"
+            android:background="@drawable/ic_fondo_social"
+            app:srcCompat="@drawable/ic_facebook" />
+
+        <ImageButton
+            android:id="@+id/btn_linkedin"
+            android:onClick="goToLinkedin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_fondo_social"
+            app:srcCompat="@drawable/ic_linkedin" />
+
+        <ImageButton
+            android:id="@+id/btn_twitter"
+            android:layout_width="wrap_content"
+            android:onClick="goToTwitter"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_fondo_social"
+            app:srcCompat="@drawable/ic_twitter" />
+    </com.google.android.material.chip.ChipGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

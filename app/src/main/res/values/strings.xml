@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ComputerFormsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mision">
+        Impactar con diseños de vanguardia que provean de seguridad y belleza en impresos
+        para evidenciar la personalidad y autenticidad de las marcas que confían en nosotros y
+        su público meta quede impresionado.
+    </string>
+    <string name="vision">
+        Ser el mejor aliado estratégico que lleva a las marcas a crecer y posicionarse,
+        acompañándolas en sus necesidades de comunicación offline, con impresos y
+        mercadotecnia visual, y online a través de estrategias de publicidad. Creciendo
+        nuestros modelos de negocios y áreas creativas.
+    </string>
+
+    <string-array name="desc_valores_array">
+        <item>Cuidar lo que Dios nos dios y a nuestro equipo. Así como implementar diseños que protegen el valor de cada marca y empresa que confía en nosotros.</item>
+        <item>En cada proceso, en cada idea, buscamos que el factor wow esté implícito, por eso realizamos cada trabajo con especial atención, para llegar a resultados inesperados.</item>
+        <item>Existimos para el beneficio de las familias.</item>
+        <item>Creemos que los logros alcanzados y los que están por venir son gracias a Dios y nuestra confianza en Él.</item>
+        <item>Creemos que el trabajo en equipo es fundamental para desarrollar las tareas de cada una de nuestras Divisiones.</item>
+        <item>No solo buscamos lo que es novedoso además marcamos las tendencias para sentar las bases del desarrollo futuro. Somos la guía en la industria.</item>
+        <item>Nuestra propia historia nos ha demostrado la capacidad que tenemos para adaptarnos a situaciones adversas, ponerlas a nuestro favor y salir adelante.</item>
+    </string-array>
+
+    <string-array name="valores_array">
+        <item>Seguridad</item>
+        <item>Creatividad</item>
+        <item>Familia</item>
+        <item>Fe</item>
+        <item>Colaboración</item>
+        <item>Vanguardia</item>
+        <item>Resilencia</item>
+    </string-array>
+
+</resources>

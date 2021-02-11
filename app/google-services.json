@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "685660654849",
+    "project_id": "computerformsapp",
+    "storage_bucket": "computerformsapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685660654849:android:aef4fdcfb251a4c5d81f00",
+        "android_client_info": {
+          "package_name": "com.anthonytepach.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685660654849-trrqvja7is0s1r6bqpsp19arbb623psl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfnlMGUiPWCJcQ_b8e7qCqMNJofDWOZcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685660654849-trrqvja7is0s1r6bqpsp19arbb623psl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menu">
+
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.anthonytepach.app.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menu_to_postsFragment"
+            app:destination="@id/postsFragment" />
+        <action
+            android:id="@+id/action_menu_to_integrate"
+            app:destination="@id/integrate" />
+        <action
+            android:id="@+id/action_menu_to_directorio"
+            app:destination="@id/directorio" />
+    </fragment>
+    <fragment
+        android:id="@+id/postsFragment"
+        android:name="com.anthonytepach.app.PostsFragment"
+        android:label="fragment_posts"
+        tools:layout="@layout/fragment_posts">
+        <action
+            android:id="@+id/action_postsFragment_to_postIndividualFragment"
+            app:destination="@id/postIndividualFragment" />
+        <action
+            android:id="@+id/action_postsFragment_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/integrate"
+        android:name="com.anthonytepach.app.IntegrateFragment"
+        android:label="fragment_integrate"
+        tools:layout="@layout/fragment_integrate">
+        <action
+            android:id="@+id/action_integrate_to_misionFragment"
+            app:destination="@id/misionFragment" />
+        <action
+            android:id="@+id/action_integrate_to_visionFragment"
+            app:destination="@id/visionFragment" />
+        <action
+            android:id="@+id/action_integrate_to_valoresFragment"
+            app:destination="@id/valoresFragment" />
+        <action
+            android:id="@+id/action_integrate_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/postIndividualFragment"
+        android:name="com.anthonytepach.app.PostIndividualFragment"
+        android:label="fragment_post_individual"
+        tools:layout="@layout/fragment_post_individual">
+        <action
+            android:id="@+id/action_postIndividualFragment_to_postsFragment"
+            app:destination="@id/postsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/misionFragment"
+        android:name="com.anthonytepach.app.MisionFragment"
+        android:label="fragment_mision"
+        tools:layout="@layout/fragment_mision">
+        <action
+            android:id="@+id/action_misionFragment_to_integrate"
+            app:destination="@id/integrate" />
+    </fragment>
+    <fragment
+        android:id="@+id/visionFragment"
+        android:name="com.anthonytepach.app.VisionFragment"
+        android:label="fragment_vision"
+        tools:layout="@layout/fragment_vision">
+        <action
+            android:id="@+id/action_visionFragment_to_integrate"
+            app:destination="@id/integrate" />
+    </fragment>
+    <fragment
+        android:id="@+id/valoresFragment"
+        android:name="com.anthonytepach.app.ValoresFragment"
+        android:label="fragment_valores"
+        tools:layout="@layout/fragment_valores">
+        <action
+            android:id="@+id/action_valoresFragment_to_integrate"
+            app:destination="@id/integrate" />
+    </fragment>
+    <fragment
+        android:id="@+id/directorio"
+        android:name="com.anthonytepach.app.Directorio"
+        android:label="fragment_directorio"
+        tools:layout="@layout/fragment_directorio">
+        <action
+            android:id="@+id/action_directorio_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+</navigation>
